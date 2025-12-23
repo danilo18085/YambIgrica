@@ -1,0 +1,394 @@
+﻿<Window x:Class="Yamb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Yamb"
+        mc:Ignorable="d"
+        Title="Yamb" Height="860" Width="1110"
+        ResizeMode="CanMinimize"
+        WindowStyle="SingleBorderWindow">
+    <Window.Resources>
+        <Style x:Key="Stil_za_border" TargetType="Border">
+            <Setter Property="BorderBrush" Value="LightGray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="#14907e" />
+        </Style>
+        <Style x:Key="Stil_za_textblock" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="1" />
+        </Style>
+    </Window.Resources>
+
+    <Canvas Background="#0b4378" RenderTransformOrigin="0.5,0.5">
+
+        <Image Source="Images/pozadinska.png" Height="121" 
+               Canvas.Top="271" Width="173" Canvas.Left="834" 
+               HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        </Image>
+
+        <Border BorderBrush="GhostWhite" BorderThickness="2" Background="White"
+                Canvas.Left="50" Canvas.Top="53">
+            <Grid x:Name="gridTabela"
+                    Width="690" Height="740"
+                    
+                    Background="#19558c"
+                    HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="IGRA"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="1"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="2"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="3"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="4"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="5"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="6"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="7" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="Σ"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="25"/>
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="MAX"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="22"/>
+                </Border>
+                <Border Grid.Row="9" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="MIN"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="22"/>
+                </Border>
+                <Border Grid.Row="10" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="Σ"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="11" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="KENTA"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="21"/>
+                </Border>
+                <Border Grid.Row="12" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="TRILING"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="17"/>
+                </Border>
+                <Border Grid.Row="13" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="FUL"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="22"/>
+                </Border>
+                <Border Grid.Row="14" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="KARE"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="21"/>
+                </Border>
+                <Border Grid.Row="15" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="YAMB"
+                        Style="{StaticResource Stil_za_textblock}"
+                        FontSize="21"/>
+                </Border>
+                <Border Grid.Row="16" Grid.Column="0" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="Σ"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="7" Grid.Column="11"
+                        x:Name="prvi_rez"
+                    Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text=""
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="10" Grid.Column="11" 
+                        x:Name="drugi_rez"
+                    Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text=""
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="16" Grid.Column="11" 
+                        Name="treci_rez"
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text=""
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1" 
+                        Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                        Text="⮟"
+                        Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="⮝⮟"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="3" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="⮝"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="4" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="N"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="5" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="R"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="6" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="D"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="7" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text=""
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="8" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text=""
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="9" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="O"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="10" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="M"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="11" 
+                       Style="{StaticResource Stil_za_border}">
+                    <TextBlock 
+                       Text="YAMB"
+                       Style="{StaticResource Stil_za_textblock}"/>
+                </Border>
+                <Label Grid.Column="7" Content="🡁" HorizontalAlignment="Left" Margin="14,30,0,0" Grid.Row="7" VerticalAlignment="Top" Width="37" 
+                       Foreground="White"
+                       FontSize="17" Grid.RowSpan="2" />
+
+                <Label Grid.Column="7" Content="🡃" HorizontalAlignment="Left" Margin="14,20,0,0" Grid.Row="9" VerticalAlignment="Top" Width="37" 
+                       Foreground="White"
+                       FontSize="17" Grid.RowSpan="2"/>
+
+                <Label Grid.Column="7" Content="⮝" HorizontalAlignment="Center" Margin="0,-4,0,0" VerticalAlignment="Top"
+                       Foreground="White"
+                       FontSize="18"/>
+                <Label Grid.Column="7" Content="⮟" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top"
+                       Foreground="White"
+                       FontSize="18"/>
+
+                <Label Grid.Column="8" Content="⮝" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top"
+                       Foreground="White"
+                       FontSize="18" Grid.RowSpan="2"/>
+                <Label Grid.Column="8" Content="⮟" HorizontalAlignment="Center" Margin="0,-6,0,0" VerticalAlignment="Top"
+                       Foreground="White"
+                       FontSize="18"/>
+
+                <Label Grid.Column="8" Content="🡁" HorizontalAlignment="Left" Margin="15,22,0,0" Grid.Row="15" VerticalAlignment="Top" Width="38" 
+                       Foreground="White"
+                       FontSize="17" Grid.RowSpan="2" />
+
+                <Label Grid.Column="8" Content="🡃" HorizontalAlignment="Left" Margin="15,31,0,0" VerticalAlignment="Top" Width="37" 
+                       Foreground="White"
+                       FontSize="17" Grid.RowSpan="2"/>
+
+            </Grid>
+        </Border>
+        <Label Content="YAMB" Canvas.Left="812" Canvas.Top="127" Height="119" Width="222"
+               Foreground="#14907e"
+               FontFamily="Consolas"
+               FontWeight="Bold"
+               FontSize="90" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top"
+               />
+
+        <Border Canvas.Left="790" Canvas.Top="494" 
+                BorderBrush="LightGray"
+                BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid x:Name="gridKocke" Visibility="Hidden"
+              Width="240" Height="160"
+              HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Border x:Name="poz_0" BorderBrush="LightGray" BorderThickness="1" Grid.Row="0" Grid.Column="0" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_0" Source="Images/kocka_1.png"  Width="80" Height="80"/>
+                </Border>
+                <Border x:Name="poz_1" BorderBrush="LightGray" BorderThickness="1" Grid.Row="0" Grid.Column="1" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_1" Source="Images/kocka_2.png"  Width="80" Height="80"/>
+                </Border>
+                <Border x:Name="poz_2" BorderBrush="LightGray" BorderThickness="1" Grid.Row="0" Grid.Column="2" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_2" Source="Images/kocka_3.png"  Width="80" Height="80"/>
+                </Border>
+                <Border x:Name="poz_3" BorderBrush="LightGray" BorderThickness="1" Grid.Row="1" Grid.Column="0" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_3" Source="Images/kocka_4.png"  Width="80" Height="80"/>
+                </Border>
+                <Border x:Name="poz_4" BorderBrush="LightGray" BorderThickness="1" Grid.Row="1" Grid.Column="1" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_4" Source="Images/kocka_5.png"  Width="80" Height="80"/>
+                </Border>
+                <Border x:Name="poz_5" BorderBrush="LightGray" BorderThickness="1" Grid.Row="1" Grid.Column="2" MouseDown="Kocka_je_kliknuta">
+                    <Image x:Name="slika_5" Source="Images/kocka_6.png"  Width="80" Height="80"/>
+                </Border>
+            </Grid>
+        </Border>
+
+
+
+        <Button x:Name="baci_kocke_button" Width="121" Height="57" Canvas.Left="776" Canvas.Top="684" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Baci_kocke_dugme">
+            <TextBlock TextAlignment="Center" FontFamily="Consolas" FontSize="23">
+                Baci
+            <LineBreak/>
+                Kocke
+            </TextBlock>
+        </Button>
+
+        <Button Content="Upiši" Canvas.Left="938" Canvas.Top="684" Height="57" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top"
+                FontFamily="Consolas"
+                FontSize="23"
+                x:Name="upisi_button"
+                Click="Upisi_dugme"/>
+
+        <Button Content="Najavi" Canvas.Left="763" Canvas.Top="54"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="89" Height="36"
+                FontFamily="Consolas"
+                FontSize="21"
+                Click="Najavi_dugme"
+                x:Name="najavi_button"/>
+
+        <Label Content="Broj bacanja:" Canvas.Left="808" Canvas.Top="771"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="178"
+               FontSize="24"
+               FontFamily="Consolas"
+               Foreground="White"/>
+        <Label Content="0" Canvas.Left="995" Canvas.Top="771"
+               x:Name="bacanja_labela"
+               FontSize="24"
+               FontFamily="Consolas"
+               Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Content="FINALNI REZULTAT: " 
+               x:Name="rezultat_labela"
+               Visibility="Hidden"
+               FontFamily="Consolas"
+               FontSize="23"
+               Foreground="White"
+               Canvas.Left="767" Canvas.Top="439" Height="37" Width="290" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Rezultat: " Canvas.Left="873" Canvas.Top="10" Height="42" Width="227"
+               x:Name="najglavniji_rezultat_labela"
+               FontFamily="Consolas"
+               FontSize="23"
+               Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    </Canvas>
+</Window>
